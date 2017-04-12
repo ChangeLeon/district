@@ -1,3 +1,6 @@
+Changes 10.1
+												2017-4-12
+			修改拼音多音字错误，如重庆(zhongqing),长沙(zhangsha),修改不完全，主要更新了district-standard.sql。
 Changes 10.0
 
 												01 Mar 2017
@@ -27,7 +30,7 @@ Changes 9.0
 	*) 林芝地区林芝市更名为林芝市巴宜区
 	*) 上饶市广丰县更名为上饶市广丰区
 	*) 更新上饶市下级行政区域排序
-	
+
 	更新脚本：
 	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1328';
 	UPDATE `district` SET `order` = '10' WHERE `id` = '1328';
@@ -59,7 +62,7 @@ Changes 9.0
 	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1687';
 	UPDATE `district` SET `order` = '3' WHERE `id` = '1686';
 	UPDATE `district` SET `order` = '2' WHERE `id` = '1687';
-	
+
 Changes 8.0
 												13 Dec 2014
 	*) 撤销昌都地区，设立昌都市
@@ -100,76 +103,76 @@ Changes 8.0
 	更新脚本：
 	UPDATE `district` SET `suffix` = '市' WHERE `id` = '422';
 	UPDATE `district` SET `name` = '卡若' , `initial` = 'k' , `initials` = 'kr' , `pinyin` = 'karuo' , `suffix` = '区' WHERE `id` = '2853';
-	UPDATE `district` SET `suffix` = '区' , `code` = '220113' , `order` = '7' WHERE `id` = '1032'; 
-	UPDATE `district` SET `order` = '8' WHERE `id` = '1031'; 
+	UPDATE `district` SET `suffix` = '区' , `code` = '220113' , `order` = '7' WHERE `id` = '1032';
+	UPDATE `district` SET `order` = '8' WHERE `id` = '1031';
 	UPDATE `district` SET `suffix` = '区' WHERE `id` = '2311';
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '2538'; 
-	UPDATE `district` SET `name` = '陵城' , `initials` = 'lc' , `pinyin` = 'lingcheng' , `suffix` = '区' , `code` = '371403' WHERE `id` = '1801'; 
-	DELETE FROM `district` WHERE `id` = '534'; 
-	UPDATE `district` SET `suffix` = '区' , `code` = '130109' WHERE `id` = '552'; 
-	UPDATE `district` SET `suffix` = '区' , `code` = '130110' WHERE `id` = '555'; 
-	UPDATE `district` SET `suffix` = '区' , `code` = '130111' WHERE `id` = '541'; 
-	UPDATE `district` SET `order` = '2' WHERE `id` = '535'; 
-	UPDATE `district` SET `order` = '3' WHERE `id` = '536'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '537'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '538'; 
-	UPDATE `district` SET `order` = '6' WHERE `id` = '552'; 
-	UPDATE `district` SET `order` = '7' WHERE `id` = '555'; 
-	UPDATE `district` SET `order` = '8' WHERE `id` = '541'; 
-	UPDATE `district` SET `order` = '9' WHERE `id` = '539'; 
-	UPDATE `district` SET `order` = '10' WHERE `id` = '540'; 
-	UPDATE `district` SET `order` = '11' WHERE `id` = '542'; 
-	UPDATE `district` SET `order` = '12' WHERE `id` = '543'; 
-	UPDATE `district` SET `order` = '13' WHERE `id` = '544'; 
-	UPDATE `district` SET `order` = '14' WHERE `id` = '545'; 
-	UPDATE `district` SET `order` = '15' WHERE `id` = '546'; 
-	UPDATE `district` SET `order` = '16' WHERE `id` = '547'; 
-	UPDATE `district` SET `order` = '17' WHERE `id` = '548'; 
-	UPDATE `district` SET `order` = '18' WHERE `id` = '549'; 
-	UPDATE `district` SET `order` = '19' WHERE `id` = '550'; 
-	UPDATE `district` SET `order` = '20' WHERE `id` = '551'; 
-	UPDATE `district` SET `order` = '21' WHERE `id` = '553'; 
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '2538';
+	UPDATE `district` SET `name` = '陵城' , `initials` = 'lc' , `pinyin` = 'lingcheng' , `suffix` = '区' , `code` = '371403' WHERE `id` = '1801';
+	DELETE FROM `district` WHERE `id` = '534';
+	UPDATE `district` SET `suffix` = '区' , `code` = '130109' WHERE `id` = '552';
+	UPDATE `district` SET `suffix` = '区' , `code` = '130110' WHERE `id` = '555';
+	UPDATE `district` SET `suffix` = '区' , `code` = '130111' WHERE `id` = '541';
+	UPDATE `district` SET `order` = '2' WHERE `id` = '535';
+	UPDATE `district` SET `order` = '3' WHERE `id` = '536';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '537';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '538';
+	UPDATE `district` SET `order` = '6' WHERE `id` = '552';
+	UPDATE `district` SET `order` = '7' WHERE `id` = '555';
+	UPDATE `district` SET `order` = '8' WHERE `id` = '541';
+	UPDATE `district` SET `order` = '9' WHERE `id` = '539';
+	UPDATE `district` SET `order` = '10' WHERE `id` = '540';
+	UPDATE `district` SET `order` = '11' WHERE `id` = '542';
+	UPDATE `district` SET `order` = '12' WHERE `id` = '543';
+	UPDATE `district` SET `order` = '13' WHERE `id` = '544';
+	UPDATE `district` SET `order` = '14' WHERE `id` = '545';
+	UPDATE `district` SET `order` = '15' WHERE `id` = '546';
+	UPDATE `district` SET `order` = '16' WHERE `id` = '547';
+	UPDATE `district` SET `order` = '17' WHERE `id` = '548';
+	UPDATE `district` SET `order` = '18' WHERE `id` = '549';
+	UPDATE `district` SET `order` = '19' WHERE `id` = '550';
+	UPDATE `district` SET `order` = '20' WHERE `id` = '551';
+	UPDATE `district` SET `order` = '21' WHERE `id` = '553';
 	UPDATE `district` SET `order` = '22' WHERE `id` = '554';
-	DELETE FROM `district` WHERE `id` = '1851'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '1855'; 
-	UPDATE `district` SET `order` = '6' WHERE `id` = '1852'; 
-	UPDATE `district` SET `order` = '7' WHERE `id` = '1853'; 
-	UPDATE `district` SET `order` = '8' WHERE `id` = '1854'; 
-	UPDATE `district` SET `order` = '9' WHERE `id` = '1856'; 
-	UPDATE `district` SET `code` = '445302' WHERE `id` = '2332'; 
-	UPDATE `district` SET `order` = '2' WHERE `id` = '2332'; 
-	UPDATE `district` SET `order` = '3' WHERE `id` = '2330'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '2331'; 
-	UPDATE `district` SET `name` = '郧阳' , `initials` = 'yy' , `pinyin` = 'yunyang' , `suffix` = '区' , `code` = '420304' WHERE `id` = '2014'; 
+	DELETE FROM `district` WHERE `id` = '1851';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '1855';
+	UPDATE `district` SET `order` = '6' WHERE `id` = '1852';
+	UPDATE `district` SET `order` = '7' WHERE `id` = '1853';
+	UPDATE `district` SET `order` = '8' WHERE `id` = '1854';
+	UPDATE `district` SET `order` = '9' WHERE `id` = '1856';
+	UPDATE `district` SET `code` = '445302' WHERE `id` = '2332';
+	UPDATE `district` SET `order` = '2' WHERE `id` = '2332';
+	UPDATE `district` SET `order` = '3' WHERE `id` = '2330';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '2331';
+	UPDATE `district` SET `name` = '郧阳' , `initials` = 'yy' , `pinyin` = 'yunyang' , `suffix` = '区' , `code` = '420304' WHERE `id` = '2014';
 	UPDATE `district` SET `code` = '500120' WHERE `id` = '109';
-	UPDATE `district` SET `code` = '500151' WHERE `id` = '107'; 
-	UPDATE `district` SET `order` = '20' WHERE `id` = '109'; 
-	UPDATE `district` SET `order` = '22' WHERE `id` = '106'; 
-	UPDATE `district` SET `order` = '23' WHERE `id` = '108'; 
-	UPDATE `district` SET `code` = '350703' WHERE `id` = '1580'; 
-	UPDATE `district` SET `order` = '2' WHERE `id` = '1580'; 
-	UPDATE `district` SET `order` = '3' WHERE `id` = '1572'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '1573'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '1574'; 
-	UPDATE `district` SET `order` = '6' WHERE `id` = '1575'; 
-	UPDATE `district` SET `order` = '7' WHERE `id` = '1576'; 
-	UPDATE `district` SET `order` = '8' WHERE `id` = '1577'; 
-	UPDATE `district` SET `order` = '9' WHERE `id` = '1578'; 
-	UPDATE `district` SET `order` = '10' WHERE `id` = '1579'; 
-	UPDATE `district` SET `code` = '371003' WHERE `id` = '1779'; 
-	UPDATE `district` SET `code` = '440904' WHERE `id` = '2274'; 
-	UPDATE `district` SET `code` = '440117' WHERE `id` = '2224'; 
-	UPDATE `district` SET `code` = '440118' WHERE `id` = '2223'; 
-	UPDATE `district` SET `order` = '11' WHERE `id` = '2224'; 
-	UPDATE `district` SET `order` = '12' WHERE `id` = '2223'; 
-	UPDATE `district` SET `initials` = 'fm' , `pinyin` = 'fumian' , `code` = '450903' WHERE `id` = '3584'; 
+	UPDATE `district` SET `code` = '500151' WHERE `id` = '107';
+	UPDATE `district` SET `order` = '20' WHERE `id` = '109';
+	UPDATE `district` SET `order` = '22' WHERE `id` = '106';
+	UPDATE `district` SET `order` = '23' WHERE `id` = '108';
+	UPDATE `district` SET `code` = '350703' WHERE `id` = '1580';
+	UPDATE `district` SET `order` = '2' WHERE `id` = '1580';
+	UPDATE `district` SET `order` = '3' WHERE `id` = '1572';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '1573';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '1574';
+	UPDATE `district` SET `order` = '6' WHERE `id` = '1575';
+	UPDATE `district` SET `order` = '7' WHERE `id` = '1576';
+	UPDATE `district` SET `order` = '8' WHERE `id` = '1577';
+	UPDATE `district` SET `order` = '9' WHERE `id` = '1578';
+	UPDATE `district` SET `order` = '10' WHERE `id` = '1579';
+	UPDATE `district` SET `code` = '371003' WHERE `id` = '1779';
+	UPDATE `district` SET `code` = '440904' WHERE `id` = '2274';
+	UPDATE `district` SET `code` = '440117' WHERE `id` = '2224';
+	UPDATE `district` SET `code` = '440118' WHERE `id` = '2223';
+	UPDATE `district` SET `order` = '11' WHERE `id` = '2224';
+	UPDATE `district` SET `order` = '12' WHERE `id` = '2223';
+	UPDATE `district` SET `initials` = 'fm' , `pinyin` = 'fumian' , `code` = '450903' WHERE `id` = '3584';
 	UPDATE `district` SET `code` = '220281' WHERE `id` = '1040';
-	UPDATE `district` SET `code` = '542431' WHERE `id` = '2894'; 
-	UPDATE `district` SET `code` = '620201' WHERE `id` = '3034'; 
-	UPDATE `district` SET `code` = '220822' WHERE `id` = '1076'; 
-	UPDATE `district` SET `order` = '3' WHERE `id` = '1076'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '1074'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '1075'; 
+	UPDATE `district` SET `code` = '542431' WHERE `id` = '2894';
+	UPDATE `district` SET `code` = '620201' WHERE `id` = '3034';
+	UPDATE `district` SET `code` = '220822' WHERE `id` = '1076';
+	UPDATE `district` SET `order` = '3' WHERE `id` = '1076';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '1074';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '1075';
 
 Changes 7.0
 												14 Oct 2014
@@ -181,12 +184,12 @@ Changes 7.0
 
 	更新脚本：
 	UPDATE `district` SET `initial` = 'x' , `initials` = 'xf' , `suffix` = '区' , `code` = '410212' WHERE `id` = '1855';
-	UPDATE `district` SET `order` = '6' WHERE `id` = '1855'; 
-	UPDATE `district` SET `order` = '7' WHERE `id` = '1852'; 
-	UPDATE `district` SET `order` = '8' WHERE `id` = '1853'; 
-	UPDATE `district` SET `order` = '9' WHERE `id` = '1854'; 
+	UPDATE `district` SET `order` = '6' WHERE `id` = '1855';
+	UPDATE `district` SET `order` = '7' WHERE `id` = '1852';
+	UPDATE `district` SET `order` = '8' WHERE `id` = '1853';
+	UPDATE `district` SET `order` = '9' WHERE `id` = '1854';
 	UPDATE `district` SET `suffix` = '区' WHERE `id` = '2332';
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1823'; 
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1823';
 
 Changes 6.0
 												24 Sep 2014
@@ -203,8 +206,8 @@ Changes 5.1
 	*) 修正错误的辽宁行政区级别为：省
 
 	更新脚本：
-	UPDATE `district` SET `suffix` = '自治区' WHERE `id` = '7'; 
-	UPDATE `district` SET `suffix` = '省' WHERE `id` = '8'; 
+	UPDATE `district` SET `suffix` = '自治区' WHERE `id` = '7';
+	UPDATE `district` SET `suffix` = '省' WHERE `id` = '8';
 
 	感谢：@wwb-dev( https://github.com/wwb-dev ) 对错误数据的纠正
 
@@ -216,10 +219,10 @@ Changes 5.0
 	*) STANDARD 版和 SIMPLE 版保留行政代码
 
 	更新脚本：
-	UPDATE `district` SET `order` = '1' WHERE `id` = '3578'; 
-	UPDATE `district` SET `order` = '2' WHERE `id` = '3579'; 
-	UPDATE `district` SET `order` = '3' WHERE `id` = '3580'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '3581'; 
+	UPDATE `district` SET `order` = '1' WHERE `id` = '3578';
+	UPDATE `district` SET `order` = '2' WHERE `id` = '3579';
+	UPDATE `district` SET `order` = '3' WHERE `id` = '3580';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '3581';
 
 Changes 4.0
 												09 Sep 2014
@@ -267,129 +270,129 @@ Changes 4.0
 	*) 修正巴音郭楞蒙古自治州博湖县行政代码
 
 	更新脚本：
-	UPDATE `district` SET `name` = '兰陵' , `initial` = 'l' , `initials` = 'll' , `pinyin` = 'lanling' WHERE `id` = '1794'; 
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1779'; 
-	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `code`, `area_code`, `order`) VALUES ('双河', '31', 's', 'sh', 'shuanghe', '市', '659007', '0909', '21'); 
-	UPDATE `district` SET `area_code` = '0997' WHERE `id` = '474'; 
-	UPDATE `district` SET `code` = '659005' WHERE `id` = '466'; 
-	UPDATE `district` SET `code` = '659006' , `area_code` = '0996' WHERE `id` = '465'; 
-	UPDATE `district` SET `name` = '乌鲁木齐', `initial` = 'w', `initials` = 'wlmq', `pinyin` = 'wulumuqi', `code` = '650100', `code` = '0996 0991' WHERE `id` = '465'; 
-	UPDATE `district` SET `parentid` = 465 WHERE `parentid` = 467; 
-	UPDATE `district` SET `name` = '克拉玛依', `initial` = 'k', `initials` = 'klmy', `pinyin` = 'kelamayi', `code` = '650200', `area_code` = '0990' WHERE `id` = '466'; 
-	UPDATE `district` SET `parentid` = 466 WHERE `parentid` = 468; 
-	UPDATE `district` SET `name` = '吐鲁番', initial` = 't', `initials` = 'tlf', `pinyin` = 'tulufan', `suffix` = '地区', `code` = '652100', `area_code` = '0995' WHERE `id` = '467'; 
+	UPDATE `district` SET `name` = '兰陵' , `initial` = 'l' , `initials` = 'll' , `pinyin` = 'lanling' WHERE `id` = '1794';
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1779';
+	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `code`, `area_code`, `order`) VALUES ('双河', '31', 's', 'sh', 'shuanghe', '市', '659007', '0909', '21');
+	UPDATE `district` SET `area_code` = '0997' WHERE `id` = '474';
+	UPDATE `district` SET `code` = '659005' WHERE `id` = '466';
+	UPDATE `district` SET `code` = '659006' , `area_code` = '0996' WHERE `id` = '465';
+	UPDATE `district` SET `name` = '乌鲁木齐', `initial` = 'w', `initials` = 'wlmq', `pinyin` = 'wulumuqi', `code` = '650100', `code` = '0996 0991' WHERE `id` = '465';
+	UPDATE `district` SET `parentid` = 465 WHERE `parentid` = 467;
+	UPDATE `district` SET `name` = '克拉玛依', `initial` = 'k', `initials` = 'klmy', `pinyin` = 'kelamayi', `code` = '650200', `area_code` = '0990' WHERE `id` = '466';
+	UPDATE `district` SET `parentid` = 466 WHERE `parentid` = 468;
+	UPDATE `district` SET `name` = '吐鲁番', initial` = 't', `initials` = 'tlf', `pinyin` = 'tulufan', `suffix` = '地区', `code` = '652100', `area_code` = '0995' WHERE `id` = '467';
 	UPDATE `district` SET `parentid` = 467 WHERE `parentid` = 469;
-	UPDATE `district` SET `name` = '哈密', `initial` = 'h', `initials` = 'hm', `pinyin` = 'hami', `extra` = '回族', `suffix` = '地区', `code` = '652200', `area_code` = '0902' WHERE `id` = '468'; 
+	UPDATE `district` SET `name` = '哈密', `initial` = 'h', `initials` = 'hm', `pinyin` = 'hami', `extra` = '回族', `suffix` = '地区', `code` = '652200', `area_code` = '0902' WHERE `id` = '468';
 	UPDATE `district` SET `parentid` = 468 WHERE `parentid` = 470;
-	UPDATE `district` SET `name` = '昌吉', `initial` = 'c', `initials` = 'cj', `pinyin` = 'changji', `suffix` = '自治州', `code` = '652300', `area_code` = '0994' WHERE `id` = '469'; 
+	UPDATE `district` SET `name` = '昌吉', `initial` = 'c', `initials` = 'cj', `pinyin` = 'changji', `suffix` = '自治州', `code` = '652300', `area_code` = '0994' WHERE `id` = '469';
 	UPDATE `district` SET `parentid` = 469 WHERE `parentid` = 471;
-	UPDATE `district` SET `name` = '博尔塔拉', `initial` = 'b', initials` = 'betl', `pinyin` = 'boertala', `extra` = '蒙古', `suffix` = '自治州', `code` = '652700', `area_code` = '0909' WHERE `id` = '470'; 
-	UPDATE `district` SET `parentid` = 470 WHERE `parentid` = 472; 
-	UPDATE `district` SET `name` = '巴音郭楞', `initial` = 'b', `initials` = 'bygl', `pinyin` = 'bayinguoleng', `extra` = '蒙古', `suffix` = '自治州', `code` = '652800', `area_code` = '0996' WHERE `id` = '471'; 
+	UPDATE `district` SET `name` = '博尔塔拉', `initial` = 'b', initials` = 'betl', `pinyin` = 'boertala', `extra` = '蒙古', `suffix` = '自治州', `code` = '652700', `area_code` = '0909' WHERE `id` = '470';
+	UPDATE `district` SET `parentid` = 470 WHERE `parentid` = 472;
+	UPDATE `district` SET `name` = '巴音郭楞', `initial` = 'b', `initials` = 'bygl', `pinyin` = 'bayinguoleng', `extra` = '蒙古', `suffix` = '自治州', `code` = '652800', `area_code` = '0996' WHERE `id` = '471';
 	UPDATE `district` SET `parentid` = 471 WHERE `parentid` = 473;
-	UPDATE `district` SET `name` = '阿克苏', `initial` = 'a', `initials` = 'aks', `pinyin` = 'akesu', `extra` = '柯尔克孜', `suffix` = '地区', `code` = '652900', `area_code` = '0997' WHERE `id` = '472'; 
+	UPDATE `district` SET `name` = '阿克苏', `initial` = 'a', `initials` = 'aks', `pinyin` = 'akesu', `extra` = '柯尔克孜', `suffix` = '地区', `code` = '652900', `area_code` = '0997' WHERE `id` = '472';
 	UPDATE `district` SET `parentid` = 472 WHERE `parentid` = 474;
-	UPDATE `district` SET `name` = '克孜勒苏', `initial` = 'k', `initials` = 'kzls', `pinyin` = 'kezilesu', `suffix` = '自治州', `code` = '653000', `area_code` = '0908' WHERE `id` = '473'; 
+	UPDATE `district` SET `name` = '克孜勒苏', `initial` = 'k', `initials` = 'kzls', `pinyin` = 'kezilesu', `suffix` = '自治州', `code` = '653000', `area_code` = '0908' WHERE `id` = '473';
 	UPDATE `district` SET `parentid` = 473 WHERE `parentid` = 475;
-	UPDATE `district` SET `name` = '喀什', `initial` = 'k', `initials` = 'ks', `pinyin` = 'kashi', `suffix` = '地区', `code` = '653100', `area_code` = '0998' WHERE `id` = '474'; 
+	UPDATE `district` SET `name` = '喀什', `initial` = 'k', `initials` = 'ks', `pinyin` = 'kashi', `suffix` = '地区', `code` = '653100', `area_code` = '0998' WHERE `id` = '474';
 	UPDATE `district` SET `parentid` = 474 WHERE `parentid` = 476;
-	UPDATE `district` SET `name` = '和田', initial` = 'h', `initials` = 'ht', `pinyin` = 'hetian', `extra` = '哈萨克', `suffix` = '地区', `code` = '653200', `area_code` = '0903' WHERE `id` = '475'; 
+	UPDATE `district` SET `name` = '和田', initial` = 'h', `initials` = 'ht', `pinyin` = 'hetian', `extra` = '哈萨克', `suffix` = '地区', `code` = '653200', `area_code` = '0903' WHERE `id` = '475';
 	UPDATE `district` SET `parentid` = 475 WHERE `parentid` = 477;
-	UPDATE `district` SET `name` = '伊犁', `initial` = 'y', `initials` = 'yl', `pinyin` = 'yili', `suffix` = '自治州', `code` = '654000', `area_code` = '0999' WHERE `id` = '476'; 
+	UPDATE `district` SET `name` = '伊犁', `initial` = 'y', `initials` = 'yl', `pinyin` = 'yili', `suffix` = '自治州', `code` = '654000', `area_code` = '0999' WHERE `id` = '476';
 	UPDATE `district` SET `parentid` = 476 WHERE `parentid` = 478;
-	UPDATE `district` SET `name` = '塔城', `initial` = 't', `initials` = 'tc', `pinyin` = 'tacheng', `suffix` = '地区', `code` = '654200', `area_code` = '0901' WHERE `id` = '477'; 
+	UPDATE `district` SET `name` = '塔城', `initial` = 't', `initials` = 'tc', `pinyin` = 'tacheng', `suffix` = '地区', `code` = '654200', `area_code` = '0901' WHERE `id` = '477';
 	UPDATE `district` SET `parentid` = 477 WHERE `parentid` = 479;
-	UPDATE `district` SET `name` = '阿勒泰', `initial` = 'a', `initials` = 'alt', `pinyin` = 'aletai', `suffix` = '地区', `code` = '654300', `area_code` = '0906' WHERE `id` = '478'; 
+	UPDATE `district` SET `name` = '阿勒泰', `initial` = 'a', `initials` = 'alt', `pinyin` = 'aletai', `suffix` = '地区', `code` = '654300', `area_code` = '0906' WHERE `id` = '478';
 	UPDATE `district` SET `parentid` = 478 WHERE `parentid` = 480;
-	UPDATE `district` SET `name` = '石河子', `initial` = 's', `initials` = 'shz', `pinyin` = 'shihezi', `suffix` = '市', `code` = '659001', `area_code` = '0993' WHERE `id` = '479'; 
-	UPDATE `district` SET `name` = '阿拉尔', `initial` = 'a', `initials` = 'ale', `pinyin` = 'alaer', `suffix` = '市', `code` = '659002', `area_code` = '0997' WHERE `id` = '480'; 
-	UPDATE `district` SET `name` = '图木舒克', `initial` = 't', `initials` = 'tmsk', `pinyin` = 'tumushuke', `suffix` = '市', `code` = '659003', `area_code` = '0998' WHERE `id` = '481'; 
-	UPDATE `district` SET `name` = '五家渠', `initial` = 'w', `initials` = 'wjq', `pinyin` = 'wujiaqu', `suffix` = '市', `code` = '659004', `area_code` = '0994' WHERE `id` = '482'; 
+	UPDATE `district` SET `name` = '石河子', `initial` = 's', `initials` = 'shz', `pinyin` = 'shihezi', `suffix` = '市', `code` = '659001', `area_code` = '0993' WHERE `id` = '479';
+	UPDATE `district` SET `name` = '阿拉尔', `initial` = 'a', `initials` = 'ale', `pinyin` = 'alaer', `suffix` = '市', `code` = '659002', `area_code` = '0997' WHERE `id` = '480';
+	UPDATE `district` SET `name` = '图木舒克', `initial` = 't', `initials` = 'tmsk', `pinyin` = 'tumushuke', `suffix` = '市', `code` = '659003', `area_code` = '0998' WHERE `id` = '481';
+	UPDATE `district` SET `name` = '五家渠', `initial` = 'w', `initials` = 'wjq', `pinyin` = 'wujiaqu', `suffix` = '市', `code` = '659004', `area_code` = '0994' WHERE `id` = '482';
 	UPDATE `district` SET `name` = '北屯', `initial` = 'b', `initials` = 'bt', `pinyin` = 'beitun', `suffix` = '市', `code` = '659005', `area_code` = '0906' WHERE `id` = '483';
-	UPDATE `district` SET `name` = '铁门关', `initial` = 't', `initials` = 'tmg', `pinyin` = 'tiemenguan', `suffix` = '市', `code` = '659006', `area_code` = '0996' WHERE `id` = '484'; 
-	DELETE FROM `district` WHERE `id` = '2273'; 
-	UPDATE `district` SET `suffix` = '区', `order` = '2' WHERE `id` = '2274'; 
-	UPDATE `district` SET `order` = '3' WHERE `id` = '2275'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '2276'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '2277'; 
-	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`) VALUES ('海棠', '357', 'h', 'ht', 'haitang', '区', '0898'); 
-	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`) VALUES ('吉阳', '357', 'j', 'jy', 'jiyang', '区', '0898'); 
-	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`) VALUES ('天涯', '357', 't', 'ty', 'tianya', '区', '0898'); 
-	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`) VALUES ('崖州', '357', 'y', 'yz', 'yazhou', '区', '0898'); 
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1100'; 
-	DELETE FROM `district` WHERE `id` = '1271'; 
-	UPDATE `district` SET `order` = '2' WHERE `id` = '1272'; 
-	UPDATE `district` SET `order` = '3' WHERE `id` = '1273'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '1274'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '1275'; 
-	UPDATE `district` SET `order` = '6' WHERE `id` = '1276'; 
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1273'; 
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1580'; 
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '109'; 
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '107'; 
-	UPDATE `district` SET `name` = '浑南' , `initial` = 'h' , `initials` = 'hn' , `pinyin` = 'hunnan' WHERE `id` = '931'; 
-	UPDATE `district` SET `suffix` = '市' WHERE `id` = '424'; 
-	UPDATE `district` SET `name` = '桑珠孜' , `initial` = 's' , `initials` = 'szz' , `pinyin` = 'sangzhuzi' , `suffix` = '区' WHERE `id` = '2876'; 
-	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `code`, `area_code`, `order`) VALUES ('霍尔果斯', '476', 'h', 'hegs', 'huoerguosi', '市', '654004', '0999', 3); 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '3255'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '3256'; 
-	UPDATE `district` SET `order` = '6' WHERE `id` = '3257'; 
-	UPDATE `district` SET `order` = '7' WHERE `id` = '3258'; 
-	UPDATE `district` SET `order` = '8' WHERE `id` = '3259'; 
-	UPDATE `district` SET `order` = '9' WHERE `id` = '3260'; 
-	UPDATE `district` SET `order` = '10' WHERE `id` = '3261'; 
-	UPDATE `district` SET `order` = '11' WHERE `id` = '3262'; 
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '2362'; 
-	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`, `order`) VALUES ('前锋', '388', 'q', 'qf', 'qianfeng', '区', '0826', '2'); 
-	UPDATE `district` SET `area_code` = '0826' WHERE `id` = '388'; 
-	UPDATE `district` SET `area_code` = '0826' WHERE `id` = '2552'; 
-	UPDATE `district` SET `area_code` = '0826' , `order` = '3' WHERE `id` = '2553'; 
-	UPDATE `district` SET `area_code` = '0826' , `order` = '4' WHERE `id` = '2554'; 
-	UPDATE `district` SET `area_code` = '0826' , `order` = '5' WHERE `id` = '2555'; 
+	UPDATE `district` SET `name` = '铁门关', `initial` = 't', `initials` = 'tmg', `pinyin` = 'tiemenguan', `suffix` = '市', `code` = '659006', `area_code` = '0996' WHERE `id` = '484';
+	DELETE FROM `district` WHERE `id` = '2273';
+	UPDATE `district` SET `suffix` = '区', `order` = '2' WHERE `id` = '2274';
+	UPDATE `district` SET `order` = '3' WHERE `id` = '2275';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '2276';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '2277';
+	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`) VALUES ('海棠', '357', 'h', 'ht', 'haitang', '区', '0898');
+	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`) VALUES ('吉阳', '357', 'j', 'jy', 'jiyang', '区', '0898');
+	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`) VALUES ('天涯', '357', 't', 'ty', 'tianya', '区', '0898');
+	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`) VALUES ('崖州', '357', 'y', 'yz', 'yazhou', '区', '0898');
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1100';
+	DELETE FROM `district` WHERE `id` = '1271';
+	UPDATE `district` SET `order` = '2' WHERE `id` = '1272';
+	UPDATE `district` SET `order` = '3' WHERE `id` = '1273';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '1274';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '1275';
+	UPDATE `district` SET `order` = '6' WHERE `id` = '1276';
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1273';
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1580';
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '109';
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '107';
+	UPDATE `district` SET `name` = '浑南' , `initial` = 'h' , `initials` = 'hn' , `pinyin` = 'hunnan' WHERE `id` = '931';
+	UPDATE `district` SET `suffix` = '市' WHERE `id` = '424';
+	UPDATE `district` SET `name` = '桑珠孜' , `initial` = 's' , `initials` = 'szz' , `pinyin` = 'sangzhuzi' , `suffix` = '区' WHERE `id` = '2876';
+	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `code`, `area_code`, `order`) VALUES ('霍尔果斯', '476', 'h', 'hegs', 'huoerguosi', '市', '654004', '0999', 3);
+	UPDATE `district` SET `order` = '4' WHERE `id` = '3255';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '3256';
+	UPDATE `district` SET `order` = '6' WHERE `id` = '3257';
+	UPDATE `district` SET `order` = '7' WHERE `id` = '3258';
+	UPDATE `district` SET `order` = '8' WHERE `id` = '3259';
+	UPDATE `district` SET `order` = '9' WHERE `id` = '3260';
+	UPDATE `district` SET `order` = '10' WHERE `id` = '3261';
+	UPDATE `district` SET `order` = '11' WHERE `id` = '3262';
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '2362';
+	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `area_code`, `order`) VALUES ('前锋', '388', 'q', 'qf', 'qianfeng', '区', '0826', '2');
+	UPDATE `district` SET `area_code` = '0826' WHERE `id` = '388';
+	UPDATE `district` SET `area_code` = '0826' WHERE `id` = '2552';
+	UPDATE `district` SET `area_code` = '0826' , `order` = '3' WHERE `id` = '2553';
+	UPDATE `district` SET `area_code` = '0826' , `order` = '4' WHERE `id` = '2554';
+	UPDATE `district` SET `area_code` = '0826' , `order` = '5' WHERE `id` = '2555';
 	UPDATE `district` SET `area_code` = '0826' , `order` = '6' WHERE `id` = '2556';
 	UPDATE `district` SET `name` = '达川' , `initials` = 'dc' , `pinyin` = 'dachuan' , `suffix` = '区' WHERE `id` = '2558';
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '2322'; 
-	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `order`) VALUES ('福绵', '350', 'f', 'fj', 'fujin', '区', 2); 
-	UPDATE `district` SET `order` = '3' WHERE `id` = '2398'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '2399'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '2400'; 
-	UPDATE `district` SET `order` = '6' WHERE `id` = '2401'; 
-	UPDATE `district` SET `order` = '7' WHERE `id` = '2402'; 
-	UPDATE `district` SET `name` = '柯桥' , `initial` = 'k' , `initials` = 'kq' , `pinyin` = 'keqiao' , `suffix` = '区' , `code` = '330603' WHERE `id` = '1365'; 
-	UPDATE `district` SET `suffix` = '区' , `code` = '330604' , `order` = '3' WHERE `id` = '1368'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '1366'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '1367'; 
-	UPDATE `district` SET `suffix` = '区' , `code` = '441403' WHERE `id` = '2292'; 
-	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1650'; 
-	DELETE FROM `district` WHERE `id` = '1760'; 
-	UPDATE `district` SET `suffix` = '区' , `code` = '370812', `order` = 2 WHERE `id` = '1770'; 
-	UPDATE `district` SET `order` = '1' WHERE `id` = '1761'; 
-	UPDATE `district` SET `order` = '3' WHERE `id` = '1762'; 
-	UPDATE `district` SET `order` = '4' WHERE `id` = '1763'; 
-	UPDATE `district` SET `order` = '5' WHERE `id` = '1764'; 
-	UPDATE `district` SET `order` = '6' WHERE `id` = '1765'; 
-	UPDATE `district` SET `order` = '7' WHERE `id` = '1766'; 
-	UPDATE `district` SET `order` = '8' WHERE `id` = '1767'; 
-	UPDATE `district` SET `order` = '9' WHERE `id` = '1768'; 
-	UPDATE `district` SET `order` = '10' WHERE `id` = '1769'; 
-	UPDATE `district` SET `order` = '11' WHERE `id` = '1771'; 
-	UPDATE `district` SET `code` = '652829' WHERE `id` = '3219'; 
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '2322';
+	INSERT INTO `district` (`name`, `parentid`, `initial`, `initials`, `pinyin`, `suffix`, `order`) VALUES ('福绵', '350', 'f', 'fj', 'fujin', '区', 2);
+	UPDATE `district` SET `order` = '3' WHERE `id` = '2398';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '2399';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '2400';
+	UPDATE `district` SET `order` = '6' WHERE `id` = '2401';
+	UPDATE `district` SET `order` = '7' WHERE `id` = '2402';
+	UPDATE `district` SET `name` = '柯桥' , `initial` = 'k' , `initials` = 'kq' , `pinyin` = 'keqiao' , `suffix` = '区' , `code` = '330603' WHERE `id` = '1365';
+	UPDATE `district` SET `suffix` = '区' , `code` = '330604' , `order` = '3' WHERE `id` = '1368';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '1366';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '1367';
+	UPDATE `district` SET `suffix` = '区' , `code` = '441403' WHERE `id` = '2292';
+	UPDATE `district` SET `suffix` = '区' WHERE `id` = '1650';
+	DELETE FROM `district` WHERE `id` = '1760';
+	UPDATE `district` SET `suffix` = '区' , `code` = '370812', `order` = 2 WHERE `id` = '1770';
+	UPDATE `district` SET `order` = '1' WHERE `id` = '1761';
+	UPDATE `district` SET `order` = '3' WHERE `id` = '1762';
+	UPDATE `district` SET `order` = '4' WHERE `id` = '1763';
+	UPDATE `district` SET `order` = '5' WHERE `id` = '1764';
+	UPDATE `district` SET `order` = '6' WHERE `id` = '1765';
+	UPDATE `district` SET `order` = '7' WHERE `id` = '1766';
+	UPDATE `district` SET `order` = '8' WHERE `id` = '1767';
+	UPDATE `district` SET `order` = '9' WHERE `id` = '1768';
+	UPDATE `district` SET `order` = '10' WHERE `id` = '1769';
+	UPDATE `district` SET `order` = '11' WHERE `id` = '1771';
+	UPDATE `district` SET `code` = '652829' WHERE `id` = '3219';
 
 Changes 3.0
 												13 Feb 2014
 	*) 删除广州市萝岗区
 	*) 广州市从化市更名为广州市从化区
 	*) 广州市增城市更名为广州市增城区
-	
+
 	更新脚本：
 	DELETE FROM `district` WHERE `id`='2222';
 	UPDATE `district` SET `suffix`='区' WHERE `id`='2223';
 	UPDATE `district` SET `suffix`='区' WHERE `id`='2224';
 
 Changes 2.0.
-												
-	*) 
+
+	*)
 
 Changes 1.0
-												
+
 	*) The first public version.
